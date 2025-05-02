@@ -35,7 +35,9 @@ The primary dataset used for this project consists of text posts scraped from va
 3.  **Versions**
     
     TensorFlow Version: TensorFlow 2.19.0.
+
     CUDA Toolkit Version: CUDA 12.3
+
     cuDNN Version: cuDNN 8.9.7 
     
 5.  **GPU Setup (if applicable):**
