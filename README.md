@@ -23,7 +23,7 @@ The primary dataset used for this project consists of text posts scraped from va
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/CWC107753035/NLP_2025.git
     cd <your-repo-directory>
     ```
 2.  **Create Environment (Recommended):**
@@ -32,13 +32,12 @@ The primary dataset used for this project consists of text posts scraped from va
     source venv/bin/activate # Linux/macOS
     # venv\Scripts\activate # Windows
     ```
-3.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    # Or install manually:
-    # pip install tensorflow pandas transformers scikit-learn matplotlib seaborn
-    ```
-4.  **GPU Setup (if applicable):**
+3.  **Versions**
+    TensorFlow Version: TensorFlow 2.19.0.
+    CUDA Toolkit Version: CUDA 12.3
+    cuDNN Version: cuDNN 8.9.7 
+    cuDNN Version: 
+5.  **GPU Setup (if applicable):**
     * Ensure you have compatible NVIDIA drivers installed.
     * Install the correct versions of CUDA Toolkit and cuDNN library compatible with your TensorFlow version (refer to TensorFlow documentation).
     * Verify environment variables (like `LD_LIBRARY_PATH` on Linux) are set correctly or that necessary libraries are discoverable by TensorFlow.
@@ -54,7 +53,6 @@ The primary dataset used for this project consists of text posts scraped from va
         * Load the prepared training and validation datasets.
         * Compile the model (optimizer, loss function).
         * Fine-tune the model using `model.fit()`.
-        * Save the fine-tuned model and tokenizer to the `/model/` directory.
 3.  **Evaluation:**
     * The evaluation part will:
         * Load the fine-tuned model and tokenizer from `/model/`.
@@ -69,4 +67,3 @@ The primary dataset used for this project consists of text posts scraped from va
 * Hyperparameter tuning (learning rate, batch size, epochs).
 * Explore more advanced text preprocessing techniques.
 * Implement methods to handle class imbalance if present.
-* Deploy the model as an API.
